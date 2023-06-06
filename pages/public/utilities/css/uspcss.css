@@ -1,0 +1,1133 @@
+	@font-face {
+	    font-family: "Coolvetica";
+	    src: url(../fonts/coolvetica.ttf) format("truetype");
+	}
+	@font-face {
+	    font-family: "LemonMilk";
+	    src: url(../fonts/LemonMilk.otf) format("truetype");
+	}
+	@font-face {
+	    font-family: "ChampagneLimousines";
+	    src: url(../fonts/Champagne_Limousines.ttf) format("truetype");
+	}
+	body, html{
+		min-height: 100%;
+		position: relative;
+		max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+	}
+    a{
+        color: #337ab7;
+        text-decoration: none;
+    }
+
+	.clickable{
+		cursor: pointer;
+	}
+	.row{
+		text-align: center;
+	}
+
+	.centered-text{
+		text-align: center;
+	}
+	.left-aligned-text{
+		text-align: left;
+	}
+	.orange-text{
+		color: rgba(218, 87, 16, 1); /* burnt orange */  
+	}
+	.bold-text{
+		font-weight: bold;
+	}
+	
+	.padded-full-screen-text{
+		padding-left: 45px; 
+		padding-right: 30px;
+	}
+	.clear-padding{
+		padding: 0;
+	}
+	.title-bar{
+	    background-color: rgba(200, 200, 200, 1); /* light gray */
+	    background-color: rgba(83, 202, 196, 1); /* light blue */ 
+	    background-color: rgba(0, 0, 0, 1); /* black */ 
+	    height: 50px;
+	    vertical-align: middle;
+/*	    overflow: auto;
+	    overflow-y: hidden;*/
+	    z-index: 1;
+	    width: 100vw;
+	    float: right;
+	    position: fixed;
+	  	padding-right: 10px;
+
+	}
+
+	.title-bar-over-image{
+	    background-color: rgba(200, 200, 200, 1); /* light gray */
+	    background-color: rgba(83, 202, 196, 1); /* light blue */ 
+	    background-color: rgba(0, 0, 0, 0.5); /* black */ 
+	    height: 50px;
+	    vertical-align: middle;
+/*	    overflow: auto;
+	    overflow-y: hidden*/;
+	    z-index: 4;
+	    width: 100vw;
+	    float: right;
+	    position: fixed;
+
+	}
+	.title-bar-over-image-clear{
+	    background-color: rgba(200, 200, 200, 1); /* light gray */
+	    background-color: rgba(83, 202, 196, 1); /* light blue */ 
+	    background-color: rgba(0, 0, 0, 0.5); /* black */ 
+	    background-color: rgba(0, 0, 0, 0.0); /* clear */ 
+	    height: 50px;
+	    vertical-align: middle;
+/*	    overflow: auto;
+	    overflow-y: hidden*/;
+	    z-index: 1;
+	    width: 100vw;
+	    float: right;
+	    position: fixed;
+
+	}
+
+	.title-bar-row{
+ 		height: 50px;
+	}
+	.quick-link{
+		position: relative;
+		color: gray;
+		height: 50px;
+		vertical-align: middle;
+		line-height: 50px;
+		text-align: center;
+		padding: 0;
+		float: right;
+
+	}
+	.quick-link-clear{
+		position: relative;
+	    background-color: rgba(0, 0, 0, 0.0); /* black */ 
+		height: 50px;
+		vertical-align: middle;
+		line-height: 50px;
+		text-align: center;
+		padding: 0;
+		float: right;
+
+	}
+	.quick-link-bar{
+		padding-right: 4vw;
+	}
+	.quick-link-button{
+		float: right;
+		height: 50px;
+		color: white;
+		font-size: 18px;
+		line-height: 50px;
+		width: 125px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		text-shadow: 1px 1px 10px black;
+
+	}
+
+	.quick-link-button-featured{
+		height: 50px;
+		color: white;
+		font-size: 18px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		text-shadow: 1px 1px 10px black;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		padding: 0 1.2rem;
+		background-color: rgba(218, 87, 16, 1); /* burnt orange */  
+		width: auto;
+	}
+
+	.quick-link-button-gray{
+		float: right;
+		height: 50px;
+	    color: rgba(200, 200, 200, 1); /* light gray */
+		font-size: 18px;
+		line-height: 50px;
+		width: 125px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		text-shadow: 1px 1px 10px black;
+
+
+	}
+
+	.frosted-cover{
+		background-color: rgb(255, 255, 255);
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.frosted-cover-black{
+        background-color: rgba(0,0,0,0.66);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        color: white;
+        z-index: 2;
+	}
+	.frosted-cover-black-non-absolute{
+		background-color: rgba(0,0,0,0.66);
+		height: 100%;
+		width: 100%;
+		color: white;
+	}
+	.roller-strip-1{
+		background-image: url(../../utilities/images/image-roller1.jpg);
+	}
+	.roller-strip-2{
+		background-image: url(../../utilities/images/image-roller2.jpg);
+	}
+	.roller-strip-3{
+		background-image: url(../../utilities/images/image-roller3.jpg);
+	}
+	.roller-strip-4{
+		background-image: url(../../utilities/images/image-roller4.jpg);
+	}
+
+	.roller-strip{
+		margin-bottom: 8px;
+		/* opacity: 0; */
+		background-repeat: repeat-x;
+		width: 200vw;
+		height: 21%;
+        flex-grow: 1;
+	}
+    .roller-strip-container{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+	.roll-left{
+
+	}
+
+	.roll-right{
+		/* margin-left: -100vw; */
+	}
+
+	.video{
+        width: 70%;
+        height: 60%;
+        position: absolute;
+
+	}
+	.usp-video-gif{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: 1;
+	}
+
+	.location-image-1{
+		width: 100%;
+		background-color: rgba(218, 87, 16, 1); /* burnt orange */  
+/*		background-color: black; 
+		background-color: white;   */
+		height: 8vw; 
+		font-size: 36px; 
+		color: white;
+		font-family: 'LemonMilk', Verdana, Tahoma;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+	}
+	.location-image-2{
+		height: 28vw; 
+		width: 100%;
+		background-color: black;  
+		background-image: url('../../utilities/images/what-to-wear1.jpg'); 
+		background-size: 100% 100%;
+	}
+	.location-image-3{
+		height: 28vw; 
+		width: 100%;
+		background-image: url('../../utilities/images/matt-yell.jpg'); 
+		background-size: 100% 100%; 
+	}
+
+    .about-masthead{
+        display: flex;
+    }
+    .about-masthead-image{
+        flex-grow: 1;
+    }
+
+    .error-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .error-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+
+    .embed-responsive-item{
+        width: 80vw;
+        height: 45vw;
+    }
+
+
+    .embed-responsive{
+        display: flex;
+        justify-content: center;
+    }
+
+	.right-arrow{
+		border-left: 5px solid white; 
+		border-top: 5px solid transparent; 
+		border-bottom: 5px solid transparent; 
+		left: 3;	
+	}
+	.title-level-text{
+		height: 100%;
+		color: white;
+		font-size: 18px;
+		line-height: 50px;
+		font-weight: bold;
+		text-align: left;
+	}
+	.top-level-text{
+		font-weight: bold;
+		font-size: 24px;
+		color: white;
+		text-shadow: 1px 1px 10px black;
+
+	}
+	.sub-level-text{
+		font-weight: bold;
+		font-size: 14px;
+		color: gray;
+		text-shadow: 1px 1px 10px black;
+	}
+	.content-title{
+		font-size: 20px;
+		color: white;
+		text-shadow: 1px 1px 10px black;
+		font-weight: bold;
+	}
+
+	.content-description{
+		font-size: 16px;
+		color: white;
+		background-color: rgba(0,0,0,0.5);
+		margin: -50px -20px;
+		padding: 50px 20px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+	}
+    .intro-text-container{    
+        text-align: center;
+        padding-top: 2rem;
+    }
+	.intro-text-title{
+		font-size: 28px;
+		font-family: 'LemonMilk', Verdana, Tahoma;
+		color: white;
+
+	}
+	.intro-text-sub-title{
+		font-size: 20px;
+		font-family: 'LemonMilk', Verdana, Tahoma;
+		color: black;
+
+	}
+	.intro-text{
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+        font-size: 1.3rem;
+		padding-right: 50px;
+		padding-left: 50px;
+
+	}
+	@media only screen and (max-width: 800px) {
+    	.intro-text {
+    	    font-size: 14px;
+    	}
+	}	
+	.watch-video-link{
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		font-size: 20px;
+		position: absolute;
+		bottom: 55;
+		right: 10;
+		cursor: pointer;
+		color: white;
+		opacity: 0.3;
+	}
+
+	.watch-video-link:hover{
+		text-decoration: underline;
+		opacity: 1;
+	}
+	.tshirt-order-link{
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		font-size: 16px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		cursor: pointer;
+		color: white;
+		background-color: rgba(218, 87, 16, 1);
+		height: 50px;
+		width: 100%;
+        text-align: center;
+	}
+
+	.order-tank-text{
+		line-height: 50px;
+	}
+
+	.main-about-content{    
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 90vh;
+        padding-top: 3rem;
+	}
+
+	.main-content-experience{
+		padding-left: 30px; 
+		padding-top: 100px;
+		padding-right: 30px;
+	}
+    .frosted-cover-black-container{
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 90vh;
+
+    }
+	.background-cover{
+		background-image: url('../../utilities/images/summer-flop-compressed.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100vw 100vh;
+		margin-top: -50px;
+		height: 100vh;
+		width: 100vw;
+		z-index: -1;
+		overflow: hidden;
+		position: relative;
+	}
+	.background-cover-no-image{
+		background-position: center;
+		background-size: 100vw 100vh;
+		margin-top: -50px;
+		height: 90vh;
+		width: 100vw;
+		overflow: hidden;
+		position: relative;
+	}
+	.background-screen{
+		height: 100vh;
+		width: 100%;
+		background-color: rgba(255,255,255,0.0);
+		position: relative;
+
+	}
+
+
+
+	.login-button{
+		float: right;
+		background-color: rgba(218, 87, 16, 1); /* burnt orange */  
+		height: 50px;
+		color: white;
+		font-size: 18px;
+		line-height: 50px;
+		width: 125px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		display: none;
+
+	}	
+
+	.logout-button{
+		float: right;
+		background-color: rgba(218, 87, 16, 1); /* burnt orange */  
+		height: 50px;
+		color: white;
+		font-size: 18px;
+		line-height: 50px;
+		width: 125px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		cursor: pointer;
+
+	}
+	.behind-color{
+		background-color: gray;
+		height: 100vh;
+		width: 100vw;
+	}
+
+
+	.triangle {
+		z-index: 5;
+	    position: fixed;
+	    background-color: black;
+	    top: -360px;
+	    left: 0;
+	    right: 0;
+	    width: 200px;
+	    height: 800px;
+	    transform: rotate(63deg);
+	    -webkit-transform: rotate(63deg);
+	    -moz-transform: rotate(63deg);
+	    -o-transform: rotate(63deg);
+	    -ms-transform: rotate(63deg);
+	    border-right: 2px solid #e74c3c;
+	}
+	.triangle-title-text{
+		position: fixed;
+		top: 15px;
+		z-index: 6;
+		width: 225px;
+		text-align: left;
+		font-size: 40px;
+		font-weight: bold;
+		color: white;
+		line-height: 34px;
+		left: 15px;
+		font-family: "LemonMilk", Verdana, Tahoma;
+	}
+	
+	.slant-container{
+		position: relative;
+		color: gray;
+		height: 100px;
+		vertical-align: middle;
+		line-height: 50px;
+		text-align: center;
+		padding: 0;
+		float: left;
+		position: fixed;
+		z-index: 2;
+	}
+
+	.slant{
+		width: 0; 
+		height: 0; 
+		border-right: 400px solid transparent;
+		position: absolute;
+		border-top: 200px solid rgba(83, 202, 196, 1); /* light blue */   		
+		border-top: 200px solid rgba(218, 87, 16, 1); /* burnt orange */   				
+		border-top: 200px solid rgba(0, 0, 0, 1); /* black */   				
+		top: 0;
+		left: 50%;
+		margin-left: -10px;
+		z-index: 2;
+
+	}
+
+	.under-slant{
+		width: 0; 
+		height: 0; 
+		border-right: 404px solid transparent;
+		border-top: 202px solid rgba(218, 87, 16, 1); /* burnt orange */ 	
+		position: absolute;
+		left: 50%;
+		margin-left: -10px;
+		z-index: 1;
+
+	}
+	.page-title-text{
+		position: absolute;
+		top: 15px;
+		z-index: 3;
+		width: 225px;
+		text-align: left;
+		font-size: 40px;
+		font-weight: bold;
+		color: white;
+		line-height: 34px;
+		left: 15px;
+		font-family: "LemonMilk", Verdana, Tahoma;
+	}
+	.down-arrow-container{
+		position: fixed;
+		height: 30px;
+		width: 30px;
+		border-radius: 15px;
+		bottom: 5px;
+		right: 5px;
+
+	}
+	.down-arrow{
+		height: 0px;
+		width: 0px;
+		top: 10px;
+		left: 10px;
+		position: relative;
+		border-right: 15px solid transparent;
+		border-left: 15px solid transparent;
+		border-top: 15px solid rgba(255, 255, 255, 0.9); /* gray */ 
+		margin: auto;	
+	}
+
+	.selected-button{
+		background-color: gray;
+	}
+
+    .attractions-container{
+        display: flex;
+        padding: 2rem;
+    }
+    .attraction{
+        flex-grow: 1;
+        flex-basis: min-content;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+	.attraction-description{
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		font-size: 16px;
+	}
+
+    .party-info{
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+	.striking-orange-text{
+		color: rgba(218, 87, 16, 1); /* burnt orange */ 	
+		font-size: 30px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+	}
+
+	.bold-title-text{
+		color: rgba(218, 87, 16, 1); /* burnt orange */ 	
+		font-size: 30px;
+		font-family: 'LemonMilk', Verdana, Tahoma;
+	}
+
+	.bold-title-text-white{
+		color: white; /* burnt orange */ 	
+		font-size: 25px;
+		font-family: 'LemonMilk', Verdana, Tahoma;
+	}
+
+	.follow-text{
+		font-size: 26px;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+	}
+	
+
+	.footer{
+/*		margin-left: -15px;
+*//*		margin-right: -15px;*/
+		position: absolute;
+		bottom: 0px;
+		background-color: black;
+		border-top: 2px solid rgba(218, 87, 16, 1); 
+		color: white; 
+		width: 100vw;
+		z-index: 2;
+	}
+
+	.footer-top-border{
+		margin-right: 0; 
+		margin-left: 0; 
+		height: 10px; 
+		background-color: rgba(218, 87, 16, 1);
+	}
+
+	.footer-container{
+		margin: auto 0px; 
+		width: 100vw;
+        text-align: center;
+	}
+
+	.footer-inner-container{
+		margin-right: 0; 
+		margin-left: 0; 
+		height: 80px; 
+		margin-top: 10px;
+	}
+
+	.footer-header{
+		font-size: 20px; 
+		font-family: 'LemonMilk', Verdana, Tahoma; 
+		overflow: hidden;
+	}
+
+	.footer-content{
+		overflow: hidden;
+	}
+
+	.create-team-button{
+		text-align: center;
+		padding: 10px 25px;
+		border-radius: 10px;
+		margin: 0px 2px;
+		width: 200px;
+		border: 2px solid rgba(218, 87, 16, 1); 
+		color: rgba(218, 87, 16, 1);
+		font-size: 20px;
+	}
+
+	.join-team-button{
+		text-align: center;
+		padding: 10px 25px;
+		border-radius: 10px;
+		margin: 0px 2px;
+		width: 200px;
+		border: 2px solid rgba(0, 0, 0, 0.8); 
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 20px;
+		cursor: pointer;
+	}
+
+	.cancel-join-team-button{
+		text-align: center;
+		padding: 10px 25px;
+		border-radius: 10px;
+		margin: 0px 2px;
+		width: 200px;
+		border: 2px solid rgba(0, 0, 0, 0.8); 
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 20px;
+		cursor: pointer;
+		display: none;
+	}
+
+	.photo-thumbnail-title{
+		text-align: left;
+		font-family: "LemonMilk", Verdana, Tahoma;
+		font-size: 26px;
+		
+	}
+
+	.photo-thumbnail-description{
+		text-align: left;
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		font-size: 16px;
+		overflow: hidden;
+	}
+
+	.beersbee-photo{
+		background-image: url('../../utilities/images/beersbee-icon-green.png');
+		background-size: 150px 150px;
+
+	}
+
+	.kickball-photo{
+		background-image: url('http://placehold.it/150x150');
+		background-size: 150px 150px;
+
+	}
+
+	.garbage-can-pong-photo{
+		background-image: url('../../utilities/images/beer-pong-icon.png');
+		background-size: 150px 150px;
+
+	}
+
+	.slip-n-slide-photo{
+		background-image: url('../../utilities/images/flip-cup-icon-red.png');
+		background-size: 150px 150px;
+
+	}
+
+	.dizzy-bat-photo{
+		background-image: url('../../utilities/images/bat-icon-blue.png');
+		background-size: 150px 150px;
+
+	}
+
+	.tent-photo{
+		background-image: url('../../utilities/images/tent-icon.png');
+		background-size: 150px 150px;
+	}
+
+	.sideways-keg-photo{
+		height: 300px; 
+		background-image: url('../../utilities/images/sideways-keg-icon.png'); 
+		background-size: 361px 300px; 
+		background-position: center; 
+		background-repeat: no-repeat;
+	}
+
+	.photo-thumbnail{
+		height: 150px;
+		width: 150px;
+	}
+
+	.line-break{
+		width: 100%; 
+		border-bottom: 2px solid rgba(218, 87, 16, 1);
+	}
+
+	.keg-count-label{
+		color: white;
+		padding-left: 70px; 
+		padding-top: 90px; 
+		font-size: 30px; 
+		text-align: center; 
+/*		text-shadow: 1px 1px 10px black; 
+*/		font-family: "LemonMilk", Verdana, Tahoma;
+	}
+
+	.keg-count-value{
+		color: white;
+		padding-left: 70px; 
+		margin-top: -10px; 
+		font-size: 60px; 
+		text-align: center; 
+		font-weight: bold;
+/*		text-shadow: 1px 1px 10px black; 
+*/		font-family: "LemonMilk", Verdana, Tahoma;
+	}
+
+	.donation-description{
+        font-size: 20px;
+        max-width: 80vw;
+        color: black;
+        text-align: center;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+    .donation-description-container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+
+    }
+	.tent-section{
+		border-top: 2px solid rgba(218, 87, 16, 1);  
+		padding-bottom: 7rem;
+        display: flex;
+        justify-content: center;
+	}
+
+    .tent-subcontainer{
+        width: 70vw;
+        display: flex;
+        padding: 1rem;
+    }
+    .tent-photo-section{
+        padding: 0 1rem;
+    }
+
+	.tent-description-container{
+		position: relative;
+        flex-grow: 2;
+	}
+
+	.tent-description{
+		font-size: 20px; 
+		position: absolute; 
+		top: auto; 
+		padding-top: 20px;
+	}
+
+	.dropdown-backdrop{
+		position: static;
+	}
+
+	.dropdown-style{
+		position: relative;
+	}
+
+	.dropdown-login-toggle-style{
+		color: white; 
+		text-decoration: none;
+	}
+
+	.dropdown-logout-toggle-style{
+		color: white;
+		text-decoration: none; 
+		height: 100%; 
+		width: 100%;
+	}
+
+	.dropdown-login-menu-style{
+		padding: 15px; 
+		padding-bottom: 0px; 
+		right: 0; 
+		left: auto; 
+		width: 300px; 
+		z-index: 4;
+	}
+
+	.dropdown-logout-menu-style{
+		padding: 0px 15px; 
+		padding-bottom: 0px; 
+		right: 0; 
+		left: auto; 
+		width: 200px; 
+		z-index: 4;
+	}
+
+	.dropdown-username-display{
+		color: black; 
+		border-bottom: 1px solid black; 
+		text-align: center;
+	}
+
+	.dropdown-logout-text{
+		height: 100%; 
+		width: 100%;"
+	}
+
+	.dropdown-username-style{
+		margin-bottom: 10px;
+	}
+
+	.dropdown-password-style{
+		margin-bottom: 10px;
+	}
+
+	.dropdown-login-button{
+		width: 40%; 
+		height: 32px; 
+		font-size: 13px; 
+		margin-right: 10px;
+	}
+
+	.table-title{
+		font-size: 24px;
+		color: rgba(218, 87, 16, 1);
+		text-align: left;
+	}
+
+	.countdown-timer{
+		padding-top: 10px;
+		color: rgba(218, 87, 16, 1);
+		font-size: 30px;
+		font-family: "Champagne_Limousines", Verdana, Tahoma;
+		text-align: center;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding-bottom: 10px;
+
+
+	}
+
+	.black-text{
+		color:white;
+	}
+
+	.white-text{
+		color: black;
+	}
+
+	.team-detail-page-title{
+		font-family: "LemonMilk", Verdana, Tahoma;
+		font-size: 36px;
+		display: inline-block;
+	}
+
+	.team-feature-label{
+		font-family: "Champagne_Limousines", Verdana, Tahoma;
+		text-align: center;
+		font-size: 24px;
+		color: black;
+
+	}
+
+	.team-feature-description{
+		font-family: "Champagne_Limousines", Verdana, Tahoma;
+		font-size: 18px;
+	}
+
+	.update-team-field-input{
+		width: 150px;
+		margin-right: 10px;
+		display: inline-block;
+	}
+
+	.team-link{
+		cursor: pointer;
+		text-decoration: underline;
+	}
+
+	.join-leave-team-actions{
+		text-align: center;
+		display: inline-block;
+	}
+	.edit-team-actions{
+		text-align: center;
+		display: inline-block;
+	}
+	.edit-team-button{
+		display: inline-block;
+		color: rgba(218, 87, 16, 1);
+		text-decoration: underline;
+		cursor: pointer;
+		font-size: 16px;
+	}
+	.edit-team-actions{
+		width: 150px;
+		display: inline-block;
+		text-align: left;
+		margin-left: 10px;
+	}
+	.team-feature-value{
+		color: black;
+	}
+
+	.team-actions-save{
+		margin-top: -15px;
+		background-color: rgba(218, 87, 16, 1);
+	}
+
+	.team-actions-cancel{
+		margin-top: -15px;
+	}
+	
+
+	.tshirt-color-item{
+		display: block;
+	}
+	.color-box{
+		display: inline-block; 
+		height: 20px; 
+		width: 20px; 
+		border-radius: 4px; 
+	}
+
+	.color-box-maroon{
+		background-color: rgb(146, 34, 56);
+	}
+	.color-box-red{
+		background-color: rgb(210, 10, 40);
+	}
+	.color-box-orange{
+		background-color: rgb(220, 88, 42);
+	}
+	.color-box-yellow{
+		background-color: rgb(240, 169, 61);
+	}
+	.color-box-green{
+		background-color: rgb(134, 182, 96);
+	}
+	.color-box-blue{
+		background-color: rgb(3, 135, 184);
+	}
+	.color-box-royal{
+		background-color: rgb(33, 78, 134);
+	}
+	.color-box-lightblue{
+		background-color: rgb(145, 176, 230);
+	}
+	.color-box-purple{
+		background-color: rgb(79, 35, 122);
+	}
+	.color-box-navy{
+		background-color: rgb(25, 28, 53);
+	}
+	.color-box-charcoal{
+		background-color: rgb(73, 73, 73);
+	}
+	.color-box-black{
+		background-color: rgb(0, 0, 0);
+	}
+	.color-box-gray{
+		background-color: rgb(170, 172, 184);
+	}
+	
+	.color-select-grid{
+		display: grid; 
+		grid-template-columns: 1fr 1fr 1fr 1fr ;  
+		grid-template-rows: 7.5vw 7.5vw 7.5vw;
+	}
+
+	.color-select-box{
+		cursor: pointer;
+	}
+
+	.color-select-box.selected{
+		border: 1rem solid white;
+	}
+
+	.tank-image{
+		width: 90%;
+	}
+
+	.content-offset{
+		padding-left: 20px;
+	}
+	
+	.order-now-button{
+		display: inline-block;
+		margin-top: 20px;
+		padding: 5px 10px;
+		color: white;
+		border-radius: 5px;
+		font-family: "LemonMilk", Verdana, Tahoma;
+		background-color: rgba(218, 87, 16, 1); /* burnt orange */
+		font-size: 2rem;  
+		cursor: pointer;
+
+	}
+
+	.inline-card{
+		background-color: rgba(86, 77, 101, 0.09);
+		padding: 2.5rem;
+	}
+
+	.info-card{
+		background-color: rgba(86, 77, 101, 0.09);
+		padding: 2.5rem;
+		margin: 2rem;
+	}
+
+	.thumbnail-grid{
+		display: grid; 
+		grid-gap: 3rem; 
+		grid-template-columns: repeat(auto-fill, 25%);
+	}
+
+	.video-thumbnail-container{
+		width: 100%;
+		padding-right: 1rem;
+	}
+
+	.video-thumbnail{
+		width: 100%;
+		opacity: 0.5;
+	}
+
+	.video-thumbnail:hover{
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.promo-video-container{
+/*		margin-bottom: 5rem;
+*/	}
+
+	.video-title{
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		font-size: 2rem;
+	}
+
+	.video-info{
+		font-family: 'Champagne_Limousines', Verdana, Tahoma;
+		font-size: 1.25rem;
+	}

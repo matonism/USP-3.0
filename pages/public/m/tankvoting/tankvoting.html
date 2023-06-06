@@ -1,0 +1,67 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script> 
+	<script type="module" src="../../utilities/webcomponents/USPModules.js"></script>
+	<script src="../utilities/js/viewDetector.js"></script>
+
+	<link rel="stylesheet" href="./tankvoting.css">
+	<link rel="icon" type="image/png" href="../utilities/images/beachBall.png">
+	
+</head>
+
+<body>
+<div class="page-wrapper">
+	<usp-header mobile="true"></usp-header>
+
+	<usp-side-panel open="false" mobile="true" side="right" size="90%">
+		<a href="../home">
+			<div class="side-bar-nav-element">USP 2020</div>
+		</a>
+		<a href="../about">
+			<div class="side-bar-nav-element">About</div>
+		</a>
+		<a href="../experience">
+			<div class="side-bar-nav-element">Experience</div>
+		</a>
+		<a href="../tankvoting">
+			<div class="side-bar-nav-element-special">Tank Voting</div>
+		</a>
+		<a target="_blank" href="https://venmo.com/Ultimate-Summer-Party">
+			<div class="side-bar-nav-element">Contribute</div>
+		</a>
+	</usp-side-panel>
+
+	<div class="page-subtitle-band">
+		Tank Voting
+	</div>
+
+	<div class="padded-full-screen-text">
+
+		<div class="bold-title-text">
+			USP 2020 Tank Design Voting
+		</div>
+		<div class="description-m">
+			As a part of Ultimate Summer Party 2020, we are giving you, the people, the opportunity to submit and vote on the design for our official USP2020 tank.  You may submit as many designs as you can think of.  The more options we have, the better we can guarantee a BOMB USP tank.  All submissions must include 5 or less colors, must be in <b>JPG</b> or <b>PNG</b> format, and must not contain profane or derogatory language or imagery.  Aside from that, we will limit your creativity.  We will be taking design submissions until <b>April 10th</b>.  Please submit a valid email with your tank design so we can contact you if your design requires any updates to be valid for voting.
+		</div>
+
+		<div class="description-m">
+			On April 26th, we will open voting to the public here at www.ultimatesummerparty.com.  All attendees are all limited to one vote.  You must submit your First and Last name with your vote to ensure your vote is legitimate and not a duplicate.  Voting will be closed on May 15th and the design with the most votes will become the official USP2020 tank.  The winner will be announced here as well as on the Ultimate Summer Party <a target="_blank" href='https://www.instagram.com/ultimatesummerparty/?hl=en' class="bold-text">Instagram account</a>.   We will work with the winner to finalize their design and they will receive a free USP2020 tank for their contribution.
+		</div>
+
+		<div class="description-m">
+			And of course you can always pre-order your tank at any time by sending $14to the <a target="_blank" href="https://venmo.com/Ultimate-Summer-Party" class="bold-text">USP Venmo Account</a>. Make sure to specify that your donation is going towards your tank by including the text "USPTank" in your payment.
+		</div>
+
+
+	</div>
+
+	<usp-tank-vote-container></usp-tank-vote-container>
+	<usp-footer></usp-footer>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="../utilities/css/uspcss.css">
+	<link rel="stylesheet" href="../utilities/css/sidePanel.css">
+	<script src="../utilities/js/viewDetector.js"></script>
+
+
+	<link rel="icon" 
+	type="image/png" 
+	href="../utilities/images/beachBall.png">
+	<title>Ultimate Summer Party</title>
+</head>
+<body>
+
+	<div class="triangle hide-mobile"></div>
+	<div class="triangle-title-text hide-mobile">
+		Ultimate <br/>Summer <br/>Party
+	</div>
+
+		
+
+    <div class="title-bar-row">
+        <div class="title-bar">
+            <div class="quick-link-bar">
+                <div class="row">
+                    <a href="../tshirtInfo">
+                        <div class='quick-link-button quick-link-button-featured'>
+                            Tank Design
+                        </div>
+                    </a>
+                    <a href="../experience">
+                        <div class='quick-link-button'>
+                            Experience
+                        </div>
+                    </a>
+
+                    <a href="../about">
+                        <div class='quick-link-button'>
+                            About
+                        </div>
+                    </a>
+
+                    <a href="../">
+                        <div class='quick-link-button'>
+                            USP 2020
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+		<!-- ******************************** HEADER ********************************* -->
+
+
+		<!-- ******************************** MAIN CONTENT ********************************* -->
+
+
+		<div class="main-content main-content-experience">
+			<div class="promo-video-container">
+				<div class="">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="USPvideo" class="embed-responsive-item" src="https://www.youtube.com/embed/5kXMEuwh19o?ecver=1" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+
+
+ 			<hr/>
+
+			<div class="thumbnail-grid">
+
+				<div onclick="showVideo('5kXMEuwh19o');">
+					<div class="video-thumbnail-container">
+						<img class="video-thumbnail" src="https://img.youtube.com/vi/5kXMEuwh19o/0.jpg"/>
+					</div>
+					<div class="video-title">
+						USP 2019
+					</div>
+					<div class="video-info">
+						Recap video of Ultimate Summer Party 2019
+					</div>
+				</div>
+
+				<div onclick="showVideo('cuwwuzLI_xE');">
+					<div class="video-thumbnail-container">
+						<img class="video-thumbnail" src="https://img.youtube.com/vi/cuwwuzLI_xE/0.jpg"/>
+					</div>
+					<div class="video-title">
+						USP 2018
+					</div>
+					<div class="video-info">
+						Recap video of Ultimate Summer Party 2018
+					</div>
+				</div>
+
+				<div onclick="showVideo('i9Fo979Nysw');">
+					<div class="video-thumbnail-container">
+						<img class="video-thumbnail" src="https://img.youtube.com/vi/i9Fo979Nysw/0.jpg"/>
+					</div>
+					<div class="video-title">
+						USP 2017
+					</div>
+					<div class="video-info">
+						Recap video of Ultimate Summer Party 2017
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<!-- ******************************** MAIN CONTENT ********************************* -->
+
+
+
+		<!-- ******************************** FOOTER ********************************* -->
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+
+
+		
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-top-border">
+                </div>
+                <div class="footer-inner-container">
+                    <div class="">
+                        <div class="footer-header">
+                            Ultimate Summer Party 2020
+                        </div>
+                        <div class="footer-content">
+                            Rich Matonis | 216-633-2334 &#9679; Mike Matonis | 216-406-8704 <br/>
+                            ultimatesummerpartyseries@gmail.com
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+		<!-- ******************************** FOOTER ********************************* -->
+	<script>
+
+		function loadVideo(){
+			var url = new URL(document.location.href);
+			var video = !!url.searchParams.get("v") ? url.searchParams.get("v") : '5kXMEuwh19o';
+			var uspVideo = document.querySelector('#USPvideo');
+			uspVideo.src = 'https://www.youtube.com/embed/' + video + '?ecver=1';
+
+			document.querySelectorAll('.video-thumbnail').forEach(function(element){
+				if(element.src.includes(video)){
+					element.style.opacity = '1';
+				}
+
+			});
+
+		}
+
+		function showVideo(videoId){
+			window.location.href = window.location.pathname + '?v=' + videoId;
+		}
+
+		document.onload = loadVideo();
+
+	</script>
+
+	<script src="../utilities/js/helperFunctions.js"></script>	
+	<script src="../utilities/js/resizeFunctions.js"></script>
+	<script src="../utilities/js/sidePanel.js"></script>	
+	<script src="./experience.js"></script>
+
+</body>
+
+</html>

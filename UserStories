@@ -1,0 +1,39 @@
+
+P1 - Tank Design Submission
+
+Back End
+
+Front End
+ - Web page for file upload
+ - Web page for successful upload
+ - Loading bar for file uploading progress
+ - Error message if Heroku callout breaks
+ - Display thumbnail of upload prior to upload
+
+
+ Closed Stories
+ - Rate Limiting on DB accesses
+ - File Size Limits
+ - File Type Restrictions
+ - Request Origin Restriction
+ - Rollback of S3 store in DB store fails
+ - Secure Storage of keys
+ - Make sure there are no null entries
+
+P2 - Tank Design Voting
+
+User Stories
+ - DB to gauge if person has already voted based on name
+
+Front End
+ - Web page for design voting
+ - Web page for successful vote
+
+
+
+
+Research
+ - Examine limits of S3
+ - Examine limits of Heroku traffic
+
+
