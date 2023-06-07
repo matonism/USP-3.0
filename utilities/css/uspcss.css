@@ -1093,9 +1093,8 @@
 	}
 
 	.thumbnail-grid{
-		display: grid; 
-		grid-gap: 3rem; 
-		grid-template-columns: repeat(auto-fill, 25%);
+        display: flex;
+        flex-flow: column;
 	}
 
 	.video-thumbnail-container{
