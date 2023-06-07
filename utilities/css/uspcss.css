@@ -1092,10 +1092,11 @@
 		margin: 2rem;
 	}
 
-	.thumbnail-grid{
-        display: flex;
-        flex-flow: column;
-	}
+    .thumbnail-grid{
+        display: grid; 
+        grid-gap: 3rem; 
+        grid-template-columns: repeat(auto-fill, 25%);
+    }
 
 	.video-thumbnail-container{
 		width: 100%;
@@ -1321,11 +1322,12 @@
         }
 
         .intro-text-title-m{
-            font-size: 6rem;
+            font-size: 2rem;
             font-family: 'LemonMilk', Verdana, Tahoma;
             color: black;
             text-align: left;
-            line-height: 6rem;
+            line-height: 2rem;
+            padding-bottom: 1rem;
 
         }
         .intro-text{
@@ -1372,7 +1374,11 @@
         }
 
         .main-content-experience-m{
-            padding-top: 5vh;
+            padding-top: 2vh;
+        }
+
+        .experience-video-container{
+            padding-bottom: 1rem;
         }
 
         .attraction-image-m{
@@ -1579,18 +1585,25 @@
             padding-right: 1rem;
         }
 
+        .thumbnail-grid{
+            display: flex;
+            flex-flow: column;
+            grid-gap: unset;
+            padding-top: 1rem;
+        }
+
         .video-thumbnail{
             width: 100%;
         }
 
         .video-title{
             font-family: "LemonMilk", Verdana, Tahoma;
-            font-size: 2.5rem;
+            font-size: 1.5rem;
         }
 
         .video-info{
             font-family: 'Champagne_Limousines', Verdana, Tahoma;
-            font-size: 2rem;
+            font-size: 1rem;
         }
 
         .thumbnail-card{
