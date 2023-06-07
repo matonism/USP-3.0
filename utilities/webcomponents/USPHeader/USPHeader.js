@@ -28,7 +28,9 @@ class USPHeader extends HTMLElement {
 
 	execute(component){
 		let menuNav = component.shadowRoot.querySelector('.hamburger-nav');
-		menuNav.onclick = function(){component.toggleMenu(component)};
+        if(menuNav){
+            menuNav.onclick = function(){component.toggleMenu(component)};
+        }
 	}
 	
 	//******************* END SETUP ******************

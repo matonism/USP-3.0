@@ -1558,13 +1558,6 @@
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
             grid-template-rows: 18vw 18vw 18vw;
         }
-
-        .color-select-box{
-            align-self: center;
-            height: 100%;
-            cursor: pointer;
-        }
-
         
         .order-now-button{
             display: inline-block;
@@ -1574,7 +1567,7 @@
             border-radius: 5px;
             font-family: "LemonMilk", Verdana, Tahoma;
             background-color: rgba(218, 87, 16, 1); /* burnt orange */
-            font-size: 3rem;  
+            font-size: 2rem;  
             cursor: pointer;
 
         }
@@ -1705,6 +1698,11 @@
             width: 100%;
             margin-top: 0.2rem;
             text-align: left;
+        }
+
+        .tank-image-container{
+            display: flex;
+            justify-content: center;
         }
 
     }

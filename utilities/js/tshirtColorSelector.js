@@ -21,8 +21,10 @@ var tshirtColorSelector = (function(tshirtColorSelector){
                                 newBox.className = classString;
                             });
                             
-                            var image = document.getElementById('tank-image');
-                            image.src = '../utilities/images/2020/' + color + '.png';
+                            var image = document.querySelectorAll('.tank-image');
+                            image.forEach(tankImage => {
+                                tankImage.src = '../utilities/images/2020/' + color + '.png';
+                            })
                         }
                     }
                 });
