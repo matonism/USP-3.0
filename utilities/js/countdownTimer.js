@@ -17,7 +17,7 @@ var countdownTimer = (function(countdownTimer){
             var days, hours, minutes, seconds;
              
             // get tag element
-            var countdown = document.getElementById('countdown');
+            var countdown = document.querySelectorAll('.countdown-timer');
              
             // update the tag with id "countdown" every 1 second
             setInterval(function () {
@@ -42,11 +42,13 @@ var countdownTimer = (function(countdownTimer){
                  seconds = 0;
                  }
                 // format countdown string + set tag value
-                countdown.innerHTML = '<span class="days"><b>' 
-                + days +  ' </b><span class="black-text">Days</span><b></span> <span class="hours">' 
-                + hours + ' </b><span class="black-text">Hours</span><b></span> <span class="minutes">'
-                + minutes + ' </b><span class="black-text">Minutes</span><b></span> <span class="seconds">' 
-                + seconds + ' </b><span class="black-text">Seconds</span></span>';  
+                countdown.forEach(countdownTimer => {
+                    countdownTimer.innerHTML = '<span class="days"><b>' 
+                    + days +  ' </b><span class="black-text">Days</span><b></span> <span class="hours">' 
+                    + hours + ' </b><span class="black-text">Hours</span><b></span> <span class="minutes">'
+                    + minutes + ' </b><span class="black-text">Minutes</span><b></span> <span class="seconds">' 
+                    + seconds + ' </b><span class="black-text">Seconds</span></span>';  
+                })
              
             }, 1000);
         //};

@@ -1381,6 +1381,11 @@
             padding-bottom: 1rem;
         }
 
+        .attractions-container{
+            display: flex;
+            padding: unset;
+        }
+
         .attraction-image-m{
             width: 25vw; 
             height: 25vw;
@@ -1498,7 +1503,7 @@
 
         .tent-section{
             border-top: 2px solid rgba(218, 87, 16, 1);  
-            padding-bottom: 25px;
+            padding-bottom: unset;
         }
 
         .tent-description-container{
@@ -1514,6 +1519,7 @@
         }
         .tent-description-m{
             font-size: 1.0rem; 
+            padding: 1rem;
         }
 
         .countdown-timer{
